@@ -7,7 +7,7 @@ import { setupWasteOverTime } from "./charts/waste_over_time";
 import { setupFoodBreakdown } from "./charts/food_breakdown";
 import { setupSodiumOverTime } from "./charts/sodium_over_time";
 
-let deck = new Reveal({ plugins: [Markdown] });
+let deck = new Reveal({ plugins: [Markdown], width: 1280, height: 720 });
 deck.initialize();
 
 const observer = new IntersectionObserver(
