@@ -1,7 +1,7 @@
 import { loadWasteData } from "./data";
 import Chart from "chart.js/auto";
 
-export function setupWasteOverTime(element) {
+export function setupSodiumOverTime(element) {
   const data = loadWasteData();
 
   const onVisible = () => {
@@ -12,7 +12,7 @@ export function setupWasteOverTime(element) {
         datasets: [
           {
             label: "Waste",
-            data: data.map((d) => d.wasteTotal),
+            data: data.map((d) => d.sodiumTotal),
             backgroundColor: "rgba(255, 99, 132, 0.2)",
             borderColor: "rgb(255, 99, 132)",
           },
